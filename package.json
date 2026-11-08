@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "@whiskeysockets/baileys": "latest",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
