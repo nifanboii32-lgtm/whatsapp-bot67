@@ -61,8 +61,8 @@ async function connectToWhatsApp() {
     });
 }
 
-connectToWhatsApp();
-const http = require('http');
+import http from 'http';
+
 const PORT = process.env.PORT || 3000;
 
 http.createServer((req, res) => {
@@ -70,8 +70,7 @@ http.createServer((req, res) => {
   res.end('WhatsApp Bot is running successfully!');
 }).listen(PORT, () => {
   console.log(`HTTP server is listening on port ${PORT}`);
-import http from 'http';
-const PORT = process.env.PORT || 3000;
-http.createServer((req, res) => res.end('Bot is running!')).listen(PORT);
+});
+
 
 
